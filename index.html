@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homework 6 localStorage</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sing-in-block">
+            <form class="row g-3 needs-validation sing-in-form" novalidate>
+                <h2 class="form-heading">Please sing in</h2>
+                <div class="form-floating col-12">
+                    <input type="email" class="form-control sing-in__email" id="floatingEmail"
+                        placeholder="name@example.com" pattern="^[\w.-]+@\w+\.\w{2,3}$" required>
+                    <label for="floatingEmail" class="text-secondary">Email</label>
+                    <div class="invalid-feedback">
+                        Please provide a email.
+                    </div>
+                </div>
+                <div class="form-floating col-12">
+                    <input type="password" class="form-control sing-in__password" id="floatingPassword"
+                        placeholder="name@example.com" pattern="^\w{8,15}$" required>
+                    <label for="floatingPassword" class="text-secondary">Password</label>
+                    <div class="invalid-feedback">
+                        Please provide a password.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Sing In</button>
+                </div>
+            </form>
+
+            <button type="button" class="switch-form-btn">Sing Up now</button>
+        </div>
+        <div class="sing-up-block none">
+            <form class="row g-3 needs-validation sing-up-form" novalidate>
+                <h2 class="form-heading">Please sing up</h2>
+                <div class="form-floating col-12">
+                    <input type="text" class="form-control sing-up__first-name" id="floatingFirstName"
+                        placeholder="name@example.com" pattern="^[a-zA-Z]{1,20}$" required>
+                    <label for="floatingFirstName" class="text-secondary">First name</label>
+                    <div class="invalid-feedback">
+                        Please provide a first name.
+                    </div>
+                </div>
+                <div class="form-floating col-12">
+                    <input type="text" class="form-control sing-up__last-name" id="floatingLastName"
+                        placeholder="name@example.com" pattern="^[a-zA-Z]{1,20}$" required>
+                    <label for="floatingSecondName" class="text-secondary">Last name</label>
+                    <div class="invalid-feedback">
+                        Please provide a second name.
+                    </div>
+                </div>
+                <div class="form-floating col-12">
+                    <input type="email" class="form-control sing-up__email" id="floatingEmail"
+                        placeholder="name@example.com" pattern="^[\w.-]+@\w+\.\w{2,3}$" required>
+                    <label for="floatingEmail" class="text-secondary">Email</label>
+                    <div class="invalid-feedback">
+                        Please provide a email.
+                    </div>
+                </div>
+                <div class="form-floating col-12">
+                    <input type="password" class="form-control sing-up__password" id="floatingPassword"
+                        placeholder="name@example.com" pattern="^\w{8,15}$" required>
+                    <label for="floatingPassword" class="text-secondary">Password</label>
+                    <div class="invalid-feedback">
+                        Please provide a password.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Sing Up</button>
+                </div>
+            </form>
+
+            <button type="button" class="switch-form-btn">Sing In now</button>
+        </div>
+        <div class="profile none">
+            <div class="profile__avatar">
+                <img src="https://img.freepik.com/free-vector/man-avatar-profile-on-round-icon_24640-14044.jpg?size=338&ext=jpg"
+                    alt="Avatar">
+            </div>
+            <div class="profile__name"></div>
+            <div class="profile__email"></div>
+            <div class="profile__position">Design & Web Developing</div>
+
+            <button type="button" class="btn btn-success btn-sing-out">Sing Out</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <!-- Main JS File -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
